@@ -219,8 +219,8 @@ def onMousePress(app, mouseX, mouseY):
 
 def onMouseMove(app, mouseX, mouseY):
     if app.selectedTrash != None and not app.gameOver:
-        app.selectedTrash.x = mouseX - app.selectedTrash.width
-        app.selectedTrash.y = mouseY - app.selectedTrash.height
+        app.selectedTrash.x = mouseX - app.selectedTrash.width//2
+        app.selectedTrash.y = mouseY - app.selectedTrash.height//2
 
 def onKeyPress(app, key):
     if key == 'r' and app.gameOver: reset(app)
